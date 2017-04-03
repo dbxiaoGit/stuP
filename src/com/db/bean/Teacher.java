@@ -5,6 +5,7 @@ public class Teacher {
 
 	public String getTno() {
 		return tno;
+		
 	}
 
 	public void setTno(String tno) {
