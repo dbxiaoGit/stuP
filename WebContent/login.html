@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+</head>
+<body>
+	<div>
+		<h1>用户登录</h1>
+	</div>
+	<hr/>
+	<div>
+		<form action="doLogin" method="post">
+			<table>
+				<tr>
+					<td>用户名
+					</td>
+					<td colspan=3>
+						<input type="text" name="username"/>
+					</td>
+				</tr>
+				<tr>
+					<td>密码
+					</td>
+					<td colspan=3>
+						<input type="password" name="password"/>
+					</td>
+				</tr>
+				<tr>
+					<td>用户类型
+					</td>
+					<td>
+						<input type="radio" name="ctype" value="student" checked/>学生
+					</td>
+					<td>
+						<input type="radio" name="ctype" value="teacher"/>教师
+					</td>
+					<td>
+						<input type="radio" name="ctype" value="admin"/>管理员
+					</td>
+				</tr>
+				<tr>
+					<td colspan=4>
+						<input type="submit" value="登录" onclick="jiami()"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<script type="text/javascript" src="js/md5.js" ></script>
+	<script type="text/javascript">
+		function jiami() {
+			document.getElementsByName("password")[0].value=hex_md5(document.getElementsByName("password")[0].value);
+		}
+	</script>
+</body>
+</html>
