@@ -1,0 +1,2 @@
+# stuP
+student information manager
