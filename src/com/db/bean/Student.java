@@ -1,3 +1,6 @@
+/**
+ * @author dbxiao
+ */
 package com.db.bean;
 
 public class Student {

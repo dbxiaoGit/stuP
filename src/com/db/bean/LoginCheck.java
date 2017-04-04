@@ -1,3 +1,6 @@
+/**
+ * @author dbxiao
+ */
 package com.db.bean;
 
 import java.sql.Connection;
